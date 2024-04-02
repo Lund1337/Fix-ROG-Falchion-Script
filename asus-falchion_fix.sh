@@ -10,6 +10,8 @@ if [ -f "$FILE_PATH" ]; then
 fi
 
 # Define the content of the file
+# Thank you @jnettlet for the fix
+# https://gist.github.com/jnettlet/afb20a048b8720f3b4eb8506d8b05643
 CONTENT=$(cat <<EOF
 evdev:input:b*v0B05p193Ee0111*
   KEYBOARD_KEY_10081=reserved
